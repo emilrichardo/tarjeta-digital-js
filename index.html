@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+
+  <body>
+    <div id="loader">
+      <div
+        class="bg-blue-900 text-white h-screen w-screen fixed let-0 top-0 z-50 grid place-items-center h-screen"
+      >
+        <div class="logo"></div>
+        <span>Loading</span>
+      </div>
+    </div>
+
+    <h5 class="antetitulo text-center"></h5>
+    <div class="logo"></div>
+    <p class="frase"></p>
+
+    <div id="countDown">
+      <span class="counter_item">
+        <span id="days">000</span>
+        <span id="daystxt">Días</span>
+      </span>
+      <span class="counter_item">
+        <span id="hours">00</span>
+        <span id="hourstxt">Horas</span>
+      </span>
+      <span class="counter_item">
+        <span id="minutes">00</span>
+        <span id="minutestxt">Minutos</span>
+      </span>
+      <span class="counter_item">
+        <span id="seconds">00</span>
+        <span id="secondstxt">Segundos</span>
+      </span>
+    </div>
+
+    <p class="tituloInvitacion"></p>
+    <p class="cuerpoInvitacion"></p>
+
+    <span class="id"></span>
+    <span class="nombres"></span>
+    <span class="personal"></span>
+
+    <audio controls preload="auto">
+      <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
