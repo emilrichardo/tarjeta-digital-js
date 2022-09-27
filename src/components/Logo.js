@@ -1,8 +1,9 @@
-import createElements from "/src/functions/createElements";
+import createElements from "./../functions/createElements.js";
 
 function Logo(data) {
+
   const logoMarkup = () => `
-    <div class="logoText text-center">      
+    <div class="logoText text-center">
       <div>${data.nombres.novia}</div>
       <div>${data.nombres.separador}</div>
       <div>${data.nombres.novio}</div>

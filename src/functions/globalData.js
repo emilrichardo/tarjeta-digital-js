@@ -1,6 +1,7 @@
 //https://docs.google.com/spreadsheets/d/1pA3oJ8TbQ1v7204aJTo2qx2Khi8DsKuLFylBl0dHj0c/gviz/tq?tqx=out:json&gid=0
-import invitados from "/src/invitados.json";
-import { invited, typeInvite } from "/src/functions/classes";
+import invitados from "./../invitados.json" assert { type: "json" };
+import data from "./../data.json" assert { type: "json" }
+import { invited, typeInvite } from "./classes.js";
 // datos gloables de la invitacion
 
 export const types = [];
@@ -32,13 +33,14 @@ invitadosJson.forEach((invitado, i) => {
 
 //current W E S T
 // route
-const route = window.location.pathname.replace(/\//, "");
+const route = window.location.hash.replace(data.hash, "");
 let currentInvitation;
 if (route === "") {
   currentInvitation = 0;
 } else {
   currentInvitation = route;
 }
+
 
 export const currentWest = invitadosList[currentInvitation];
 

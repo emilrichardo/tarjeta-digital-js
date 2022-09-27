@@ -1,4 +1,4 @@
-import createElements from "/src/functions/createElements";
+import createElements from "../functions/createElements.js";
 
 export default async function westElements(data, dynamicContent) {
   const currentInvited = (await data) || {};
@@ -10,7 +10,7 @@ export default async function westElements(data, dynamicContent) {
     createElements(".nombres", currentInvited.nombres);
     createElements(".personal", currentInvited.personal);
     createElements(".relacion", currentInvited.relacion);
-    createElements(".id", currentInvited.id + 1);
+    createElements(".id", currentInvited.id);
     createElements(".tituloInvitacion", tituloInvitacion);
     createElements(".cuerpoInvitacion", cuerpoInvitacion);
   }

@@ -5,7 +5,8 @@
     "novio": "Nestor",
     "separador": "&"
   },
-  "dominio": "https://44jc7u.csb.app",
+  "dominio": "http://127.0.0.1:5500",
+  "hash": "#invitacion-1911",
   "frase": "Amor es solo una palabra, hasta que alguien llega a darle sentido",
   "fecha": {
     "dia": 19,
@@ -15,7 +16,7 @@
   },
   "mjs_titulo": "¡Querida Familia!",
   "mjs_cuerpo": "Con mucho amor y alegría, los invitamos a formar parte de este momento tan importante en nuestras vidas. ",
-  "msj_cantidad": "(*) Respetar cantidad de imvitados",
+  "msj_cantidad": "(*) Respetar cantidad de invitados",
 
   "puntos_encuentros": {
     "titulo": "Puntos de encuentro",
