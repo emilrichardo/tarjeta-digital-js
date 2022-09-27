@@ -8,14 +8,14 @@
   </head>
 
   <body>
-    <div id="loader">
+    <!-- <div id="loader">
       <div
         class="bg-blue-900 text-white h-screen w-screen fixed let-0 top-0 z-50 grid place-items-center h-screen"
       >
         <span class="logo"></span>
         <span>Loading</span>
       </div>
-    </div>
+    </div> -->
 
     <h5 class="antetitulo text-center"></h5>
     <div class="logo"></div>
@@ -53,6 +53,33 @@
       <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
+
+    <section id="assistance">
+      <fieldset id="confirmationFielSet">
+        <legend>Confirmation</legend>
+
+        <div>
+          <input type="radio" id="yes" name="confirmAssitance" value="yes" checked>
+          <label for="yes" id="yesLabel">Yes</label>
+        </div>
+
+        <div>
+          <input type="radio" id="no" name="confirmAssitance" value="no">
+          <label for="no" id="noLabel">No</label>
+        </div>
+        <div>
+          <span id="message"></span>
+          <div>
+            <a href="" id="sendResponse" data-action="share/whatsapp/share">Send</a>
+          </div>
+
+        </div>
+
+
+    </fieldset>
+
+
+    </section>
 
     <script type="module" src="src/main.js"></script>
   </body>

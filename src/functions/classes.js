@@ -1,5 +1,5 @@
 //clases
-export class dataInvitationMarriage {
+export class dataInvitation{
   constructor({ type, theme, dateInfo, places = [] }) {
     this.type = type;
     this.theme = theme;
@@ -67,5 +67,17 @@ export class invited {
     this.personal = personal;
     this.relacion = relacion;
     this.confirmacion = confirmacion;
+  }
+}
+
+export class confirmAssistance{
+  constructor({title,timeLimit, textYes, textNo, textSend, messageYes, messageNo}){
+    this.title = title;
+    this.timeLimit = timeLimit;
+    this.textYes = textYes;
+    this.textNo = textNo;
+    this.textSend = textSend;
+    this.messageYes  = messageYes;
+    this.messageNo  = messageNo;
   }
 }

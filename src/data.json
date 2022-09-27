@@ -3,8 +3,9 @@
   "nombres": {
     "novia": "Viviana",
     "novio": "Nestor",
-    "separador": "&"
+    "separador": "y"
   },
+  "telefono":"3855963936",
   "dominio": "http://127.0.0.1:5500",
   "hash": "#invitacion-1911",
   "frase": "Amor es solo una palabra, hasta que alguien llega a darle sentido",
@@ -42,8 +43,15 @@
   },
   "confirmacion": {
     "titulo": "Confirmación de presencia",
-    "si": "SI! Confirmamos",
-    "no": "No podemos :(",
+    "plazo": "Se ruega Confirmación de presencia hasta el 2 de noviembre",
+    "si": "SI! Confirmo",
+    "siResponse": "Es un alegría inmesa contar con tu presencia. ¡Te esperamos!",
+    "si2": "SI! Confirmamos",
+    "siResponse2": "Es una alegría inmesa contar con su presencia. ¡Los esperamos!",
+    "no": "No puedo :(",
+    "noResponse": "Lamentamos que no puedas asistir, te queremos mucho. Por favor envianos tu respuesta. ¡Saludos!",
+    "no2": "No podemos :(",
+    "noResponse2": "Lamentamos que no puedan asistir, los queremos mucho.  Por favor enviennos su respuesta. ¡Saludos!",
     "enviar": "Enviar respuesta"
   },
   "regalos": {

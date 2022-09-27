@@ -8,7 +8,7 @@ export default  function PlacesComponent (data){
    </div>
     `
     createElements(".places", listPoints);
-    console.log(data);
+
 }
 
 function pointItem  (pointdata) {
@@ -25,5 +25,3 @@ function pointItem  (pointdata) {
 }
 
 const icons = document.querySelectorAll(".icon")
-
-console.log(icons);
