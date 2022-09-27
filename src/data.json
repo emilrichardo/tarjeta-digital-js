@@ -7,7 +7,7 @@
   },
   "telefono":"3855963936",
   "dominio": "http://127.0.0.1:5500",
-  "hash": "#invitacion-1911",
+  "hash": "#invitacion-10",
   "frase": "Amor es solo una palabra, hasta que alguien llega a darle sentido",
   "vestimenta": "",
   "fecha": {
@@ -45,9 +45,9 @@
     "titulo": "Confirmación de presencia",
     "plazo": "Se ruega Confirmación de presencia hasta el 2 de noviembre",
     "si": "SI! Confirmo",
-    "siResponse": "Es un alegría inmesa contar con tu presencia. ¡Te esperamos!",
+    "siResponse": "Es un alegría inmensa contar con tu presencia. ¡Te esperamos!",
     "si2": "SI! Confirmamos",
-    "siResponse2": "Es una alegría inmesa contar con su presencia. ¡Los esperamos!",
+    "siResponse2": "Es una alegría inmensa contar con su presencia. ¡Los esperamos!",
     "no": "No puedo :(",
     "noResponse": "Lamentamos que no puedas asistir, te queremos mucho. Por favor envianos tu respuesta. ¡Saludos!",
     "no2": "No podemos :(",
@@ -56,7 +56,7 @@
   },
   "regalos": {
     "obligatorio": "Tu Presencia",
-    "Opcional": "Un pedacito de nuestra Luna de Miel, para hacerlo podes depositar en nuestra cuenta bancaria.",
+    "opcional": "Un pedacito de nuestra Luna de Miel, para hacerlo podes depositar en nuestra cuenta bancaria.",
     "btn_cuenta": "Ver CBU",
     "alias": "PESCA.CANTO.BIGOTE",
     "cbu": "0170071840000036332414"

@@ -203,5 +203,3 @@ export const assitanceData = new confirmAssistance({
   messageYes: messageSi,
 
 })
-
- console.log(novios.separador);

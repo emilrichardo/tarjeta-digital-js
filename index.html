@@ -8,14 +8,14 @@
   </head>
 
   <body>
-    <!-- <div id="loader">
+    <div id="loader">
       <div
         class="bg-blue-900 text-white h-screen w-screen fixed let-0 top-0 z-50 grid place-items-center h-screen"
       >
         <span class="logo"></span>
-        <span>Loading</span>
+        <span>Loading</spsan>
       </div>
-    </div> -->
+    </div>
 
     <h5 class="antetitulo text-center"></h5>
     <div class="logo"></div>
@@ -56,16 +56,16 @@
 
     <section id="assistance">
       <fieldset id="confirmationFielSet">
-        <legend>Confirmation</legend>
-
+        <h3 id="confirmTitle"></h3>
+        <p id="confirmBody"></p>
         <div>
-          <input type="radio" id="yes" name="confirmAssitance" value="yes" checked>
-          <label for="yes" id="yesLabel">Yes</label>
+          <input class="hidden" type="radio" id="yes" name="confirmAssitance" value="yes" checked>
+          <label class="btn active" for="yes" id="yesLabel">Yes</label>
         </div>
 
         <div>
-          <input type="radio" id="no" name="confirmAssitance" value="no">
-          <label for="no" id="noLabel">No</label>
+          <input class="hidden" type="radio" id="no" name="confirmAssitance" value="no">
+          <label class="btn" for="no" id="noLabel">No</label>
         </div>
         <div>
           <span id="message"></span>

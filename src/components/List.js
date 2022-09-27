@@ -21,13 +21,13 @@ export default async function List(dataJson, invitadosList) {
   ${data.mjs_titulo} -
   ${data.mjs_cuerpo}
   Para más información, te dejamos este enlace con la tarjeta digital.
-  ${data.dominio}/${invitacion.id}
+  ${data.dominio + "/" + data.hash + invitacion.id }
   ¡Los esperamos!`;
 
     const item = `
   <li class="px-8 py-1 border">
     <h5>
-      <a href="/#invitacion-1911${invitacion.id}" class="hover:text-blue-600">
+      <a href="${data.dominio + "/" + data.hash + invitacion.id }" class="hover:text-blue-600">
         ID: ${invitacion.id} - ${invitacion.nombres} - Personal:${invitacion.personal}
       </a>
     </h5>
