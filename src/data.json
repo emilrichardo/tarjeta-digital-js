@@ -8,11 +8,12 @@
   "dominio": "http://127.0.0.1:5500",
   "hash": "#invitacion-1911",
   "frase": "Amor es solo una palabra, hasta que alguien llega a darle sentido",
+  "vestimenta": "",
   "fecha": {
     "dia": 19,
-    "mes": 11,
+    "mes": "noviembre",
     "anio": 2022,
-    "hora": "20:00:00"
+    "hora": "20:30:00"
   },
   "mjs_titulo": "¡Querida Familia!",
   "mjs_cuerpo": "Con mucho amor y alegría, los invitamos a formar parte de este momento tan importante en nuestras vidas. ",
@@ -23,31 +24,35 @@
     "puntos": [
       {
         "lugar": "Iglesia Santo Cristo",
+        "direccion": "Avenida central 99 barrio moskoni",
+        "buttonText": "Como llegar",
         "tipo": 0,
         "horario": "20.45 hs",
         "ubicacion": "https://www.google.com/maps/place/Parroquia+Santo+Cristo/@-27.7966325,-64.2791097,15z/data=!4m5!3m4!1s0x0:0x64c041e1940c7662!8m2!3d-27.7966325!4d-64.2791097"
       },
       {
-        "lugar": "Salón Atsa (Zanjón)",
+        "lugar": "Salón Atsa",
+        "direccion": "Zanjón",
+        "buttonText": "Como llegar",
         "tipo": 1,
         "horario": "22.30 hs",
         "ubicacion": "https://www.google.com/maps/place/Complejo+Deportivo+ATSA/@-27.8587678,-64.2532242,15z/data=!4m5!3m4!1s0x0:0x599c748cea917383!8m2!3d-27.8587678!4d-64.2532242"
       }
-    ],
-    "confirmacion": {
-      "titulo": "Confirmación de presencia",
-      "si": "SI! Confirmamos",
-      "no": "No podemos :(",
-      "enviar": "Enviar respuesta"
-    },
-    "regalos": {
-      "obligatorio": "Tu Presencia",
-      "Opcional": "Un pedacito de nuestra Luna de Miel, para hacerlo podes depositar en nuestra cuenta bancaria.",
-      "btn_cuenta": "Ver CBU",
-      "alias": "PESCA.CANTO.BIGOTE",
-      "cbu": "0170071840000036332414"
-    },
-    "msj_final": "Los esperamos",
-    "footer_text": "Tarjeta digital personalizada  Enlace Arce - Ávila Año 2022"
-  }
+    ]
+  },
+  "confirmacion": {
+    "titulo": "Confirmación de presencia",
+    "si": "SI! Confirmamos",
+    "no": "No podemos :(",
+    "enviar": "Enviar respuesta"
+  },
+  "regalos": {
+    "obligatorio": "Tu Presencia",
+    "Opcional": "Un pedacito de nuestra Luna de Miel, para hacerlo podes depositar en nuestra cuenta bancaria.",
+    "btn_cuenta": "Ver CBU",
+    "alias": "PESCA.CANTO.BIGOTE",
+    "cbu": "0170071840000036332414"
+  },
+  "msj_final": "Los esperamos",
+  "footer_text": "Tarjeta digital personalizada  Enlace Arce - Ávila Año 2022"
 }

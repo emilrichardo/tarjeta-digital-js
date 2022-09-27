@@ -1,7 +1,7 @@
 //https://docs.google.com/spreadsheets/d/1pA3oJ8TbQ1v7204aJTo2qx2Khi8DsKuLFylBl0dHj0c/gviz/tq?tqx=out:json&gid=0
 import invitados from "./../invitados.json" assert { type: "json" };
 import data from "./../data.json" assert { type: "json" }
-import { invited, typeInvite } from "./classes.js";
+import { invited, place, typeInvite, places } from "./classes.js";
 // datos gloables de la invitacion
 
 export const types = [];
@@ -139,3 +139,26 @@ if (
 //create elemnt title invitation and body
 
 export const dynamicContent = newContent;
+
+
+// places -  puntos de encuentros
+const puntosEncuentros = []
+
+const newpoints = data.puntos_encuentros.puntos.forEach(punto => {
+ const newPlace = new place({
+  name: punto.lugar,
+  adress: punto.direccion,
+  ubication: punto.ubicacion,
+  hours: punto.horario,
+  linkText : punto.buttonText,
+  type: punto.tipo
+  })
+  puntosEncuentros.push(newPlace)
+})
+
+
+
+export const Places = new places({
+  title: data.puntos_encuentros.titulo,
+  points: puntosEncuentros
+})

@@ -38,6 +38,13 @@ export class date {
 }
 
 //clase para lugares
+
+export class places {
+  constructor({title, points}){
+    this.title = title;
+    this.points = points;
+  }
+}
 export class place {
   constructor({ name, adress, icon, type, hours, linkText, ubication }) {
     this.name = name;
@@ -49,6 +56,8 @@ export class place {
     this.ubication = ubication;
   }
 }
+
+
 
 // Clase para objeto invitaado
 export class invited {
