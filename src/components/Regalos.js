@@ -1,70 +1,82 @@
-import Modal from "./Modal.js"
+
 
 export default function Regalos(gifts){
 
+   const accountData = gifts[1].data
+   // console.log(accountData);
+
 const modalElement = document.querySelector("#modalAccount")
-modalElement.innerHTML = banckAccountMarkup (gifts[1].data)
-//modalElement.style.display = "none"
+
+if(modalElement){
+    modalElement.style.display = "none";
+
+    buttonBank.addEventListener("click", function(){
+        modalElement.style.display = "block"
+    })
+
+
+    if(modalElement ){
+        const bankElement = document.querySelector("#banco")
+        bankElement.textContent = accountData.bank
+
+
+
+        const aliasElement = document.querySelector("#alias")
+        aliasElement.children[0].value = accountData.alias;
+
+        const aliasCopied = document.getElementById("aliasCopied")
+        aliasCopied.style.display = "none";
+
+        const cbuCopied = document.getElementById("cbuCopied")
+        cbuCopied.style.display = "none"
+
+
+        aliasElement.addEventListener("click", function(){
+            navigator.clipboard.writeText(accountData.alias).then(() => {
+            });
+
+            aliasCopied.style.display = "block"
+
+            setTimeout(function(){
+            aliasCopied.style.display = "none"
+            }, 2000);
+        })
+
+
+        const cbuElement = document.querySelector("#cbuField")
+        cbuElement.children[0].value = accountData.accountNumber
+
+        cbuElement.addEventListener("click", function(){
+            navigator.clipboard.writeText(accountData.accountNumber).then(() => {
+            });
+            cbuCopied.style.display = "block"
+
+            setTimeout(function(){
+            cbuCopied.style.display = "none"
+            }, 2000);
+        })
+
+
+    }
+
+
+
+}
+
+
 
 const buttonBank = document.querySelector("#cbu")
 
 
-buttonBank.addEventListener("click", function(){
-    modalElement.style.display = "block"
-})
-
-const elementsCopy = modalElement
-
-
-/*  elementsCopy.forEach(item => {
-    console.log("item");
- })
- */
-
-console.log(elementsCopy);
-
-
-
-    gifts.forEach(gift => {
-        console.log(giftItem(gift));
-    });
-
-}
-
-function giftItem(gift){
-    return `
-    <div class="giftItem">
-        <h4>${gift.title}</h4>
-        <p>${gift.detail}</p>
-    </div>
-    `
-}
-
-
-
-function banckAccountMarkup (data)  {
-    return `
-    <ul class="account-data">
-        <li>
-            <h5>Banco: ${data.bank}</h5>
-        </li>
-        <li>
-            <h5>Alias:</h5>
-            <div  > <input value=${data.alias} /> </div>
-        </li>
-        <li>
-            <h5>CBU:</h5>
-            <div "><input value=${data.accountNumber} /></div>
-
-        </li>
-    </ul>
-    `
-
-}
 
 
 
 
-function copy () {
-console.log("copiado");
+
+
+
+
+
+
+
 }

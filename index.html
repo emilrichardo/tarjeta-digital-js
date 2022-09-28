@@ -88,21 +88,24 @@
           <p>...</p>
           <button id="cbu">Ver CBU</button>
         </div>
+
         <div id="modalAccount">
           <div class="modalContainer">
             <div class="modalCard">
               <div>
                 <ul class="account-data">
                     <li>
-                        <h5>Banco: ${data.bank}</h5>
+                        <h5 >Banco: <span id="banco">Banco:...</span></h5>
                     </li>
                     <li>
                         <h5>Alias:</h5>
-                        <div class="copy"> <input value="" /> </div>
+                        <div id="alias" > <input value="..." /> </div>
+                        <div id="aliasCopied" >Alias copiado</div>
                     </li>
                     <li>
                         <h5>CBU:</h5>
-                        <div class="copy"><input value="" /></div>
+                        <div id="cbuField"><input  value="..." /></div>
+                        <div id="cbuCopied" style="display:none ;">CBU copiado</div>
                     </li>
                 </ul>
               </div>

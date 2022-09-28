@@ -3,9 +3,14 @@ export default function Assistance(data, currentGuest){
 
 
     const elementTitle = document.getElementById("confirmTitle")
-    elementTitle.textContent = data.title
-    const elementBody = document.getElementById("confirmBody")
-    elementBody.textContent = data.timeLimit
+
+    if(elementTitle){
+        elementTitle.textContent = data.title
+        const elementBody = document.getElementById("confirmBody")
+        elementBody.textContent = data.timeLimit
+
+    }
+
 
 
 
