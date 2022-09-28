@@ -15,7 +15,8 @@ import {
   dynamicContent,
   currentGuest,
   Places,
-  assitanceData
+  assitanceData,
+  regalos
 } from "/src/functions/globalData.js";
 
 CountDown(data);
@@ -23,7 +24,7 @@ List(data, invitadosList);
 CardInvited(currentGuest, dynamicContent);
 PlacesComponent(Places)
 Assistance(assitanceData,currentGuest)
-Regalos()
+Regalos(regalos)
 
 
 const loader = document.getElementById("loader");

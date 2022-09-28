@@ -57,9 +57,15 @@
   "regalos": {
     "obligatorio": "Tu Presencia",
     "opcional": "Un pedacito de nuestra Luna de Miel, para hacerlo podes depositar en nuestra cuenta bancaria.",
-    "btn_cuenta": "Ver CBU",
-    "alias": "PESCA.CANTO.BIGOTE",
-    "cbu": "0170071840000036332414"
+
+    "cuenta_bancaria" : {
+      "btn_cuenta": "Ver CBU",
+      "banco" : "BBVA",
+      "alias": "PESCA.CANTO.BIGOTE",
+      "cbu": "0170071840000036332414",
+      "titular": "Arce Gonzaviviana al"
+    }
+
   },
   "msj_final": "Los esperamos",
   "footer_text": "Tarjeta digital personalizada  Enlace Arce - Ávila Año 2022"

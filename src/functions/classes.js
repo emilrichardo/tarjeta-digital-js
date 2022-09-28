@@ -81,3 +81,25 @@ export class confirmAssistance{
     this.messageNo  = messageNo;
   }
 }
+
+
+//gifts
+
+export class gifts{
+  constructor({title , detail , icon , isRequired , data}){
+    this.detail = detail;
+    this.title = title;
+    this.icon = icon;
+    this.isRequired = isRequired;
+    this.data = data
+  }
+}
+
+export class bankAccount {
+  constructor({bank, accountHolder, alias, accountNumber } ){
+    this.bank = bank;
+    this.accountHolder = accountHolder;
+    this.alias = alias;
+    this.accountNumber = accountNumber
+  }
+}

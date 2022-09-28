@@ -1,7 +1,7 @@
 //https://docs.google.com/spreadsheets/d/1pA3oJ8TbQ1v7204aJTo2qx2Khi8DsKuLFylBl0dHj0c/gviz/tq?tqx=out:json&gid=0
 import invitados from "./../invitados.json" assert { type: "json" };
 import data from "./../data.json" assert { type: "json" }
-import { people, invited, place, typeInvite, places, confirmAssistance } from "./classes.js";
+import { people, invited, place, places, confirmAssistance, gifts,bankAccount } from "./classes.js";
 // datos gloables de la invitacion
 
 
@@ -203,3 +203,32 @@ export const assitanceData = new confirmAssistance({
   messageYes: messageSi,
 
 })
+
+
+
+//regalos
+// cuenta bancaria
+
+const cuentaBancaria = new bankAccount({
+  bank:  data.regalos.cuenta_bancaria.banco,
+  accountHolder:data.regalos.cuenta_bancaria.titular,
+  alias:data.regalos.cuenta_bancaria.alias,
+  accountNumber:data.regalos.cuenta_bancaria.cbu
+})
+
+const regaloObligarotio = new gifts({
+  title: "Regalo obligatorio",
+  detail: data.regalos.obligatorio,
+  isRequired : false,
+})
+const regaloOpcional = new gifts({
+  title: "Regalo opcional",
+  detail: data.regalos.opcional,
+  isRequired : true,
+  data : cuentaBancaria
+})
+
+
+
+
+export const regalos = [regaloObligarotio , regaloOpcional ]
