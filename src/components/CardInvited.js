@@ -14,4 +14,5 @@ export default async function westElements(data, dynamicContent) {
     createElements(".tituloInvitacion", tituloInvitacion);
     createElements(".cuerpoInvitacion", cuerpoInvitacion);
   }
+  console.log(dynamicContent);
 }

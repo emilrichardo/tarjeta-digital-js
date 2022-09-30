@@ -2,20 +2,62 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <div id="loader">
-      <div
-        class="bg-blue-900 text-white h-screen w-screen fixed let-0 top-0 z-50 grid place-items-center h-screen"
-      >
-        <span class="logo"></span>
-        <span>Loading</spsan>
-      </div>
+    <div class="max-w-[410px] mx-auto relative shadow-lg bg-light">
+      <section class="h-screen relative  flex flex-col justify-center">
+        <div class="absolute left-0 -top-6 z-0">
+          <img
+            src="./src/images/hojas01.png"
+            alt="Hoja 01"
+            width=180
+            height=280
+            />
+        </div>
+        <div class="absolute right-0 -bottom-12 z-0">
+          <img
+            src="./src/images/hojas02.png"
+            alt="Hoja 01"
+            width=180
+            height=280
+            />
+        </div>
+        <div class="text-center ">
+          <h4 class=" text-xl tracking-[6px]"><span class="antetitulo"></span></h4>
+
+          <div class="mx-auto max-w-[200px]">
+            <div
+            class="logo w-60"
+            imageUrl="./src/images/logo.png"
+            type="image"
+            ></div>
+
+          </div>
+        </div>
+        <div class="px-8 mt-8 mb-4">
+          <h4 class="text-2xl max-w-[320px] px-8 italic font-normal"><p class="frase"></p></h4>
+        </div>
+        <audio controls preload="auto">
+          <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <h5 class="antetitulo text-center"></h5>
     <div class="logo"></div>

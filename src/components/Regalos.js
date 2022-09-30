@@ -10,6 +10,8 @@ const modalElement = document.querySelector("#modalAccount")
 if(modalElement){
     modalElement.style.display = "none";
 
+    const buttonBank = document.querySelector("#cbu")
+
     buttonBank.addEventListener("click", function(){
         modalElement.style.display = "block"
     })

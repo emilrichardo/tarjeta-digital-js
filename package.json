@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
+    "css": "npx tailwindcss -i ./src/css/styles.css -o ./dist/css/main.css --watch",
     "build": "parcel build index.html"
   },
   "dependencies": {
@@ -12,6 +13,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
+    "tailwindcss": "^3.1.8",
     "typescript": "4.4.4"
   },
   "resolutions": {
