@@ -24,6 +24,9 @@
   display: none;
 } */
 
-.active{
-  text-decoration: underline;
+.radio-button{
+  @apply relative transition-all  before:block  before:w-5 before:h-5   before:rounded-full before:border-2 before:border-dark before:absolute before:top-3 before:left-4
+}
+.radio-button.active{
+  @apply bg-gradient-to-bl scale-105 from-primary via-primary text-light to-primary-light   before:border-light before:border-4
 }

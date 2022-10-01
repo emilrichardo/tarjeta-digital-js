@@ -144,9 +144,30 @@
           <h5 class=" text-sm">(Zanjón)</h5>
           <a  class="btn px-6 py-3 my-6 border-dark border inline-block   uppercase font-medium" target="_blank" href="https://www.google.com/maps/place/Complejo+Deportivo+ATSA/@-27.8587678,-64.2532242,15z/data=!4m5!3m4!1s0x0:0x599c748cea917383!8m2!3d-27.8587678!4d-64.2532242">¿Como llegar?</a>
         </div>
+      </section>
 
+      <section id="assistance" class=" min-h-screen text-center flex flex-col justify-center">
+        <fieldset id="confirmationFielSet">
+          <h3 id="confirmTitle" class="text-2xl mb-8"></h3>
+          <p  id="confirmBody" class=" max-w-[240px] mx-auto inline-block mb-8" ></p>
+          <div>
+            <input class="hidden" type="radio" id="yes" name="confirmAssitance" value="yes" checked>
+            <label class="radio-button rounded-full px-6 py-2 max-w-[200px] mx-auto  border-dark border  block active" for="yes" id="yesLabel">Yes</label>
+          </div>
 
-
+          <div>
+            <input class="hidden" type="radio" id="no" name="confirmAssitance" value="no">
+            <label class="radio-button rounded-full px-6 py-2 mt-2 max-w-[200px] mx-auto border-dark border  block " for="no" id="noLabel">No</label>
+          </div>
+          <div>
+            <div  class="">
+              <span id="message"></span>
+            </div>
+            <div>
+              <a href="" id="sendResponse" class="btn px-8 mt-4 py-3 my-3 font-sans border-dark border inline-block   uppercase font-medium"  data-action="share/whatsapp/share">Send</a>
+            </div>
+          </div>
+      </fieldset>
       </section>
 
 
@@ -206,7 +227,7 @@
 
 
 
-    <section id="assistance">
+  <!--   <section id="assistance">
       <fieldset id="confirmationFielSet">
         <h3 id="confirmTitle"></h3>
         <p id="confirmBody"></p>
@@ -226,7 +247,7 @@
           </div>
         </div>
     </fieldset>
-    </section>
+    </section> -->
 
     <section id="gifts">
         <h3>Regalos</h3>
