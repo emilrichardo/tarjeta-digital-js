@@ -1,6 +1,6 @@
 
-import data from "/src/data.json" assert { type: "json" };
-import Logo from "/src/components/Logo.js";
+import data from "./data.json" assert { type: "json" };
+import Logo from "./components/Logo.js";
 import CountDown from "./components/CountDown.js";
 import List from "./components/List.js";
 import CardInvited from "./components/CardInvited.js";
