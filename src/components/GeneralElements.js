@@ -10,7 +10,8 @@ import {
     qr,
     Calendar,
     Map,
-    iglesia
+    iglesia,
+    Gift
   } from "./Icons.js"
 
   createElements(".frase", novios.frase)
@@ -25,3 +26,4 @@ import {
   createElements(".iconCalendar", Calendar )
   createElements(".iconMap", Map )
   createElements(".iconIglesia", iglesia )
+  createElements(".iconRegalo", Gift )
