@@ -43,5 +43,7 @@ function Logo(data) {
   //createElements(".logo", logoMarkup());
   createElements(".antetitulo", data.antetitulo);
 
+
+
 }
 export default Logo;
