@@ -9,7 +9,7 @@ export default function AudioPlayer() {
     const overlayInto  = document.querySelector("#overlayMusic")
     const buttonInto  = document.querySelector("#intoPlayMusic")
 
-    overlayInto.addEventListener("click", playAudio)
+    overlayInto?.addEventListener("click", playAudio)
 
 
 
