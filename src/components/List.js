@@ -6,7 +6,7 @@ export default async function List(dataJson, invitadosList) {
 
   const listadoMarkup = `
   Todas las invitaciones
-  <ul id="list">       
+  <ul id="list">
   </ul>
   `;
 
@@ -17,25 +17,25 @@ export default async function List(dataJson, invitadosList) {
   const list = document.querySelector("#list");
 
   invitadosList.forEach((invitacion) => {
-    const textWhatsapp = `${invitacion.nombres} -  
-  ${data.mjs_titulo} - 
-  ${data.mjs_cuerpo} 
-  Para más información, te dejamos este enlace con la tarjeta digital.  
-  ${data.dominio}/${invitacion.id} 
+    const textWhatsapp = `${invitacion.nombres} -
+  ${data.mjs_titulo} -
+  ${data.mjs_cuerpo}
+  Para más información, te dejamos este enlace con la tarjeta digital.
+  ${data.dominio + "/" + data.hash + invitacion.id }
   ¡Los esperamos!`;
 
     const item = `
   <li class="px-8 py-1 border">
     <h5>
-      <a href="/${invitacion.id}" class="hover:text-blue-600">
+      <a href="${data.dominio + "/" + data.hash + invitacion.id }" class="hover:text-blue-600">
         ID: ${invitacion.id} - ${invitacion.nombres} - Personal:${invitacion.personal}
-      </a> 
-    </h5>    
+      </a>
+    </h5>
     <a
       class="text-blue-600"
       href="whatsapp://send?text=${textWhatsapp}"
       data-action="share/whatsapp/share"
-      >Enviar invitacion 
+      >Enviar invitacion
       </a>
   </li>
   `;

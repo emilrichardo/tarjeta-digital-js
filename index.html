@@ -2,19 +2,62 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <div id="loader">
-      <div
-        class="bg-blue-900 text-white h-screen w-screen fixed let-0 top-0 z-50 grid place-items-center h-screen"
-      >
-        <div class="logo"></div>
-        <span>Loading</span>
-      </div>
+    <div class="max-w-[410px] mx-auto relative shadow-lg bg-light">
+      <section class="h-screen relative  flex flex-col justify-center">
+        <div class="absolute left-0 -top-6 z-0">
+          <img
+            src="./src/images/hojas01.png"
+            alt="Hoja 01"
+            width=180
+            height=280
+            />
+        </div>
+        <div class="absolute right-0 -bottom-12 z-0">
+          <img
+            src="./src/images/hojas02.png"
+            alt="Hoja 01"
+            width=180
+            height=280
+            />
+        </div>
+        <div class="text-center ">
+          <h4 class=" text-xl tracking-[6px]"><span class="antetitulo"></span></h4>
+
+          <div class="mx-auto max-w-[200px]">
+            <div
+            class="logo w-60"
+            imageUrl="./src/images/logo.png"
+            type="image"
+            ></div>
+
+          </div>
+        </div>
+        <div class="px-8 mt-8 mb-4">
+          <h4 class="text-2xl max-w-[320px] px-8 italic font-normal"><p class="frase"></p></h4>
+        </div>
+        <audio controls preload="auto">
+          <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <h5 class="antetitulo text-center"></h5>
     <div class="logo"></div>
@@ -46,10 +89,74 @@
     <span class="nombres"></span>
     <span class="personal"></span>
 
+    <div class="places"></div>
+
     <audio controls preload="auto">
       <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
+
+    <section id="assistance">
+      <fieldset id="confirmationFielSet">
+        <h3 id="confirmTitle"></h3>
+        <p id="confirmBody"></p>
+        <div>
+          <input class="hidden" type="radio" id="yes" name="confirmAssitance" value="yes" checked>
+          <label class="btn active" for="yes" id="yesLabel">Yes</label>
+        </div>
+
+        <div>
+          <input class="hidden" type="radio" id="no" name="confirmAssitance" value="no">
+          <label class="btn" for="no" id="noLabel">No</label>
+        </div>
+        <div>
+          <span id="message"></span>
+          <div>
+            <a href="" id="sendResponse" data-action="share/whatsapp/share">Send</a>
+          </div>
+        </div>
+    </fieldset>
+    </section>
+
+    <section id="gifts">
+        <h3>Regalos</h3>
+
+        <div class="gift requerid">
+          <h4>Obligatorio</h4>
+          <p>Tu presencia</p>
+        </div>
+        <div class="gift optional">
+          <h3>...</h3>
+          <p>...</p>
+          <button id="cbu">Ver CBU</button>
+        </div>
+
+        <div id="modalAccount">
+          <div class="modalContainer">
+            <div class="modalCard">
+              <div>
+                <ul class="account-data">
+                    <li>
+                        <h5 >Banco: <span id="banco">Banco:...</span></h5>
+                    </li>
+                    <li>
+                        <h5>Alias:</h5>
+                        <div id="alias" > <input value="..." /> </div>
+                        <div id="aliasCopied" >Alias copiado</div>
+                    </li>
+                    <li>
+                        <h5>CBU:</h5>
+                        <div id="cbuField"><input  value="..." /></div>
+                        <div id="cbuCopied" style="display:none ;">CBU copiado</div>
+                    </li>
+                </ul>
+              </div>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
 
     <script type="module" src="src/main.js"></script>
   </body>

@@ -3,7 +3,6 @@
 export default async function countDown(data) {
   // "november 19, 2022 00:00:00",
   const date = `${data.fecha.mes} ${data.fecha.dia}, ${data.fecha.anio} ${data.fecha.hora} `;
-  console.log(date);
 
   const finaleDate = new Date(date).getTime();
 

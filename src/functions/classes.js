@@ -1,5 +1,5 @@
 //clases
-export class dataInvitationMarriage {
+export class dataInvitation{
   constructor({ type, theme, dateInfo, places = [] }) {
     this.type = type;
     this.theme = theme;
@@ -38,6 +38,13 @@ export class date {
 }
 
 //clase para lugares
+
+export class places {
+  constructor({title, points}){
+    this.title = title;
+    this.points = points;
+  }
+}
 export class place {
   constructor({ name, adress, icon, type, hours, linkText, ubication }) {
     this.name = name;
@@ -50,6 +57,8 @@ export class place {
   }
 }
 
+
+
 // Clase para objeto invitaado
 export class invited {
   constructor({ id, nombres, personal, relacion, confirmacion }) {
@@ -58,5 +67,39 @@ export class invited {
     this.personal = personal;
     this.relacion = relacion;
     this.confirmacion = confirmacion;
+  }
+}
+
+export class confirmAssistance{
+  constructor({title,timeLimit, textYes, textNo, textSend, messageYes, messageNo}){
+    this.title = title;
+    this.timeLimit = timeLimit;
+    this.textYes = textYes;
+    this.textNo = textNo;
+    this.textSend = textSend;
+    this.messageYes  = messageYes;
+    this.messageNo  = messageNo;
+  }
+}
+
+
+//gifts
+
+export class gifts{
+  constructor({title , detail , icon , isRequired , data}){
+    this.detail = detail;
+    this.title = title;
+    this.icon = icon;
+    this.isRequired = isRequired;
+    this.data = data
+  }
+}
+
+export class bankAccount {
+  constructor({bank, accountHolder, alias, accountNumber } ){
+    this.bank = bank;
+    this.accountHolder = accountHolder;
+    this.alias = alias;
+    this.accountNumber = accountNumber
   }
 }
