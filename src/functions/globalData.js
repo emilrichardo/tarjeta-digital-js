@@ -17,11 +17,16 @@ import { people, invited, place, places, confirmAssistance, gifts,bankAccount } 
   })
 
 
-  const novios =  {
+ export const novios =  {
     "novia": novia,
     "novio": novio,
     "separador": data.nombres.separador,
+    "frase": data.frase
   }
+
+
+
+
 
 
 
