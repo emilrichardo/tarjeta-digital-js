@@ -8,7 +8,9 @@ import {
     mesa,
     vestimenta,
     qr,
-    Calendar
+    Calendar,
+    Map,
+    iglesia
   } from "./Icons.js"
 
   createElements(".frase", novios.frase)
@@ -21,3 +23,5 @@ import {
   createElements(".iconMesa", mesa )
   createElements(".iconQr", qr )
   createElements(".iconCalendar", Calendar )
+  createElements(".iconMap", Map )
+  createElements(".iconIglesia", iglesia )
