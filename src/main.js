@@ -37,6 +37,5 @@ Regalos(regalos)
 
 
 
-
 const loader = document.getElementById("loader");
 window.onload = loader?.classList.add("hidden");
