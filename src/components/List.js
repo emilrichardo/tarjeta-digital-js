@@ -5,7 +5,8 @@ export default async function List(dataJson, invitadosList) {
   const data = await dataJson;
 
   const listadoMarkup = `
-  Todas las invitaciones
+
+  <h1>Todas las invitaciones</h1>
   <ul id="list">
   </ul>
   `;
@@ -25,17 +26,18 @@ export default async function List(dataJson, invitadosList) {
   ¡Los esperamos!`;
 
     const item = `
-  <li class="px-8 py-1 border">
+  <li class="px-8 py-4 border bg-light rounded my-1 mx-2 ">
     <h5>
       <a href="${data.dominio + "/" + data.hash + invitacion.id }" class="hover:text-blue-600">
-        ID: ${invitacion.id} - ${invitacion.nombres} - Personal:${invitacion.personal}
+        ID: ${invitacion.id} - ${invitacion.nombres} <br/>
+         Personal:${invitacion.personal}
       </a>
     </h5>
     <a
-      class="text-blue-600"
+      class="text-primary flax items-center"
       href="whatsapp://send?text=${textWhatsapp}"
       data-action="share/whatsapp/share"
-      >Enviar invitacion
+      >Enviar invitacion ⟶
       </a>
   </li>
   `;

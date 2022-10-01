@@ -19,6 +19,7 @@ module.exports = {
       fontFamily: {
         'sans':  'Fira Sans ,sans-serif ' ,
         'serif':  'EB Garamond , serif ' ,
+        'mono':  'Space Mono , monospace ' ,
       },
 
     },

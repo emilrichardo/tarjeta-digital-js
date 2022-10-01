@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 
 @tailwind base;
@@ -23,6 +24,9 @@
   display: none;
 } */
 
-.active{
-  text-decoration: underline;
+.radio-button{
+  @apply relative transition-all  before:block  before:w-5 before:h-5   before:rounded-full before:border-2 before:border-dark before:absolute before:top-3 before:left-4
+}
+.radio-button.active{
+  @apply bg-gradient-to-bl scale-105 from-primary via-primary text-light to-primary-light   before:border-light before:border-4
 }
