@@ -199,8 +199,11 @@ console.log(data.hash + currentGuest.id);
 const messageSi =`"${newContent.descripcion}: ${currentGuest.nombres} - Personal:(${currentGuest.personal}) ${currentGuest.personal > 1 ? "confirman": "confirma"} su presencia."
 
  ${newContent.adjetivo} ${currentGuest.relacion}, ${currentGuest.personal > 1 ? data.confirmacion.siResponse2 : data.confirmacion.siResponse}
- Recuerden guardar este enlace dónde encontrar toda la información para ese día: ${data.dominio}/${data.hash + currentGuest.id} - ${novios.novia.name + " " + novios.separador + " " + novios.novio.name}`
-const messageNo =`${newContent.adjetivo} ${currentGuest.relacion}, ${currentGuest.personal > 1 ? data.confirmacion.noResponse2 : data.confirmacion.noResponse}. `
+  ${novios.novia.name + " " + novios.separador + " " + novios.novio.name}`
+
+
+
+ const messageNo =`${newContent.adjetivo} ${currentGuest.relacion}, ${currentGuest.personal > 1 ? data.confirmacion.noResponse2 : data.confirmacion.noResponse}. `
 export const assitanceData = new confirmAssistance({
   title: data.confirmacion.titulo,
   timeLimit: data.confirmacion.plazo,
