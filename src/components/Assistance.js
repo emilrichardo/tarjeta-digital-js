@@ -1,7 +1,7 @@
-export default function Assistance(data, currentGuest){
+export default function Assistance(data, currentGuest, phone){
 
 
-
+    console.log(phone);
     const elementTitle = document.getElementById("confirmTitle")
 
     if(elementTitle){
@@ -42,7 +42,7 @@ export default function Assistance(data, currentGuest){
 
     let msg_wpp =  data.messageYes
 
-    let wppLink = `whatsapp://send?text=${msg_wpp}`
+    let wppLink = `https://wa.me/${phone}?text=${msg_wpp}`
 
 
     const elementSend = document.getElementById("sendResponse")
@@ -57,13 +57,13 @@ export default function Assistance(data, currentGuest){
         if(e.target.value === "no"){
             elementMessage.textContent = data.messageNo
             msg_wpp = `${currentGuest.nombres} - Personal ${currentGuest.personal} comunican que no podrán asistir al evento.`
-            wppLink = `whatsapp://send?text=${msg_wpp}`
+            wppLink = `https://wa.me/${phone}?text=${msg_wpp}`
             elementSend.setAttribute("href", wppLink)
 
         } else{
             elementMessage.textContent = ""
             msg_wpp = data.messageYes
-            wppLink = `whatsapp://send?text=${msg_wpp}`
+            wppLink = `https://wa.me/${phone}?text=${msg_wpp}`
             elementSend.setAttribute("href", wppLink)
         }
         const elementCheck = document.querySelectorAll("#confirmationFielSet .radio-button")
@@ -74,6 +74,8 @@ export default function Assistance(data, currentGuest){
 
         })
     }
+
+
 
 
 

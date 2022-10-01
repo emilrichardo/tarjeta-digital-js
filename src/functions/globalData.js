@@ -25,6 +25,8 @@ import { people, invited, place, places, confirmAssistance, gifts,bankAccount } 
   }
 
 
+  export const phone = data.telefono
+
 
 
 
