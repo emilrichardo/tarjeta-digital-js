@@ -18,7 +18,8 @@ import {
   currentGuest,
   Places,
   assitanceData,
-  regalos
+  regalos,
+  phone
 } from "/src/functions/globalData.js";
 
 
@@ -27,7 +28,7 @@ CountDown(data);
 List(data, invitadosList);
 CardInvited(currentGuest, dynamicContent);
 PlacesComponent(Places)
-Assistance(assitanceData,currentGuest)
+Assistance(assitanceData,currentGuest,phone)
 Regalos(regalos)
 
 
