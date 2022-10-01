@@ -4,9 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./dist/css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.svg">
+
   </head>
 
   <body>
+
+    <div id="overlayMusic" class="bg-light fixed top-0 left-0 w-screen h-screen z-50 bg-opacity-70 flex items-center justify-center backdrop-blur-sm">
+      <div class="mx-auto text-center max-w-[200px]">
+        <div class="center">
+          <div class="mx-auto text-center max-w-[200px]">
+            <div
+            class="logo w-20 inline-block"
+            imageUrl="./src/images/logo.png"
+            type="image"
+            ></div>
+          </div>
+          <button class=" font-sans bg-gradient-to-l from-primary via-primary to-primary-light text-light rounded px-8 py-2" id="intoPlayMusic">Ver invitación</button>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
     <div class="max-w-[410px] mx-auto relative shadow-lg bg-light">
       <section class="h-screen relative  flex flex-col justify-center">
         <div class="absolute left-0 -top-6 z-0">
