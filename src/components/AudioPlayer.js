@@ -42,3 +42,16 @@ export default function AudioPlayer() {
 }
 
 AudioPlayer()
+
+
+window.addEventListener('scroll',(event) => {
+    //console.log('Scrolling...', event, window.scrollY);
+    const audioElement = document.querySelector("#audioPlayer")
+    if(window.scrollY >= 300){
+        audioElement.classList.add("fixed", "top-4")
+        audioElement.classList.remove("absolute", "bottom-5")
+    } else{
+        audioElement.classList.remove("fixed", "top-4")
+        audioElement.classList.add("absolute", "bottom-5")
+    }
+  });
