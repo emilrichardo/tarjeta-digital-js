@@ -28,9 +28,9 @@
         <div class="text-center ">
           <h4 class=" text-xl tracking-[6px]"><span class="antetitulo"></span></h4>
 
-          <div class="mx-auto max-w-[200px]">
+          <div class="mx-auto text-center max-w-[200px]">
             <div
-            class="logo w-60"
+            class="logo w-40 inline-block"
             imageUrl="./src/images/logo.png"
             type="image"
             ></div>
@@ -38,16 +38,91 @@
           </div>
         </div>
         <div class="px-8 mt-8 mb-4">
-          <h4 class="text-2xl max-w-[320px] px-8 italic font-normal"><p class="frase"></p></h4>
+          <h4 class="text-2xl max-w-[320px] px-8 italic font-normal">"<span class="frase"></span>".</h4>
         </div>
         <div class="text-center">
-          <audio controls preload="auto" autoplay class="mx-auto">
+          <audio id="myAudio" controls preload="auto"  loop class="hidden mx-auto">
             <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
+
+          <div id="audioPlayer" class="bg-white  rounded font-sans shadow-sm inline-flex px-6 py-2 absolute right-5 bottom-5  ">
+            <button id="playButton">
+              play/pause
+            </button>
+            <div class="ml-4 text-left">
+              <h4 id="titleSong" class="text-sm font-normal">All of me</h4>
+              <h5 id="artistSong" class="text-xs">Jhon Legend</h5>
+            </div>
+          </div>
+
+
+
         </div>
 
       </section>
+      <section class="z-10 relative  flex flex-col justify-center px-4">
+        <div class="text-center">
+          <i class="iconBird text-center"></i>
+          <h4 class="mt-14 text-2xl tracking-wide font-normal"><span class="tituloInvitacion"></span></h4>
+          <p class="cuerpoInvitacion mt-4 mx-auto max-w-[225px] text-lg tracking-wide leading-6  "></p>
+
+          <div class="cardInvitation font-mono mt-14 mb-8 text-left bg-gradient-to-bl from-primary via-primary to-[#c0b057]   text-light shadow-sm rounded-2xl px-8 py-8">
+            <h5>* Personal (<span class="personal"></span>)</h5>
+            <h4 class="text-xl text-center my-4"><span class="nombres"></span></h4>
+
+            <div class="grid grid-cols-2 text-center py-8">
+              <div class="vestimenta flex flex-col border-r border-light border-dashed ">
+                <i class="iconVestimenta mb-2"></i>
+                <p>Formal</p>
+              </div>
+              <div class="mesa flex flex-col">
+                <i class="iconMesa mb-2"></i>
+                Mesa:  --
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 mt-8">
+              <div class="piecard text-xs">
+                <p>(*) Respetar cantidad de invitados</p>
+                <h6>ID: F19<span class="id"></span></h6>
+              </div>
+              <div class="qr text-right">
+                <i class="iconQr"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="calendar" class="py-24">
+        <div class="text-center">
+          <div class="iconCalendar w-16 inline-block mx-auto"></div>
+          <h4 class="text-xl">Los esperamos el día</h4>
+          <h3 class=" text-3xl font-light mt-4 mb-8">19 de noviembre</h3>
+        </div>
+        <div id="countDown" class="flex justify-around text-center max-w-[220px] mx-auto ">
+          <span class="counter_item flex flex-col">
+            <span id="days" class="text-lg">000</span>
+            <span class=" uppercase text-[0.3em]" id="daystxt">Días</span>
+          </span>
+          <span class="counter_item flex flex-col">
+            <span id="hours"  class="text-lg">00</span>
+            <span class=" uppercase text-[0.3em]" id="hourstxt">Horas</span>
+          </span>
+          <span class="counter_item flex flex-col">
+            <span id="minutes"  class="text-lg">00</span>
+            <span class=" uppercase text-[0.3em]" id="minutestxt">Minutos</span>
+          </span>
+          <span class="counter_item flex flex-col">
+            <span id="seconds"  class="text-lg">00</span>
+            <span class=" uppercase text-[0.3em]" id="secondstxt">Segundos</span>
+          </span>
+        </div>
+      </section>
+
+
+
     </div>
 
 
