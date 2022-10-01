@@ -1,7 +1,7 @@
 export default function Assistance(data, currentGuest, phone){
 
 
-    console.log(phone);
+    console.log(data);
     const elementTitle = document.getElementById("confirmTitle")
 
     if(elementTitle){
