@@ -72,6 +72,6 @@ function showArrow (state){
   if(state){
     setTimeout(() => {
         arrowDown.style.display = "block"
-    }, "4000")
+    }, "1000")
   }
 }
