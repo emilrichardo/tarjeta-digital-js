@@ -36,8 +36,9 @@ Regalos(regalos)
 
 
 
-elemtArrowDown = document.querySelector("#keepDown")
-console.log(elemtArrowDown);
+
+
+
 
 const loader = document.getElementById("loader");
 window.onload = loader?.classList.add("hidden");

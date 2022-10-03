@@ -39,7 +39,7 @@
   position:absolute;
   left:50%;
   bottom:0px;
-  -webkit-animation: arrow 0.5s 1s infinite ease-out alternate;
+  -webkit-animation: arrow 1s 3s infinite ease-out alternate;
 
 }
 
@@ -81,7 +81,8 @@
     bottom:0px;
   }
   100%{
-    bottom:40px;
+    bottom:150px;
+    opacity: .5;
   }
 }
 

@@ -29,13 +29,15 @@ export default function AudioPlayer() {
     if (audioElement.paused) {
         audioElement.play()
         buttonPlay.innerHTML = buttonPlayer(false)
-        overlayInto.style.display = "none"
+        overlayInto.style.display = "none";
+        showArrow (true)
 
 
 
     } else{
         audioElement.pause()
         buttonPlay.innerHTML = buttonPlayer(true)
+
     }
 
     }
@@ -59,3 +61,17 @@ window.addEventListener('scroll',(event) => {
     }
 
   });
+
+
+
+
+function showArrow (state){
+    const arrowDown = document.getElementById("keepDown")
+    arrowDown.style.display = "none"
+
+  if(state){
+    setTimeout(() => {
+        arrowDown.style.display = "block"
+    }, "4000")
+  }
+}

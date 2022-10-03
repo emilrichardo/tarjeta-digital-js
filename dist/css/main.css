@@ -905,16 +905,12 @@ body{
   background-color: rgb(45 31 19 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-70{
-  --tw-bg-opacity: 0.7;
+.bg-opacity-80{
+  --tw-bg-opacity: 0.8;
 }
 
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
-}
-
-.bg-opacity-80{
-  --tw-bg-opacity: 0.8;
 }
 
 .bg-gradient-to-l{
@@ -1170,7 +1166,7 @@ body{
   position:absolute;
   left:50%;
   bottom:0px;
-  -webkit-animation: arrow 0.5s 1s infinite ease-out alternate;
+  -webkit-animation: arrow 1s 3s infinite ease-out alternate;
 }
 
 .arrow-down:hover{
@@ -1207,7 +1203,8 @@ body{
   }
 
   100%{
-    bottom:40px;
+    bottom:150px;
+    opacity: .5;
   }
 }
 
