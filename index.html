@@ -10,17 +10,24 @@
 
   <body>
 
-    <div id="overlayMusic" class="bg-light fixed top-0 left-0 w-screen h-screen z-50 bg-opacity-70 flex items-center justify-center backdrop-blur-sm">
+    <div id="overlayMusic" class="bg-light  fixed top-0 left-0 w-screen h-screen z-50 bg-opacity-80 flex items-center justify-center backdrop-blur-sm">
       <div class="mx-auto text-center max-w-[200px]">
         <div class="center">
           <div class="mx-auto text-center max-w-[200px]">
             <div
-            class="logo w-20 inline-block"
+            class="logo w-24 inline-block"
             imageUrl="./src/images/logo.png"
             type="image"
             ></div>
           </div>
-          <button class=" font-sans bg-gradient-to-l from-primary via-primary to-primary-light text-light rounded px-8 py-2" id="intoPlayMusic">Ver invitación</button>
+          <button class="flex justify-between font-sans text-lg bg-gradient-to-l from-primary via-primary to-primary-light text-light rounded px-8 py-2 mt-8" id="intoPlayMusic">
+            <span> Ver invitación</span>
+            <svg class="inline-block" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.2605 18.1753L13.6745 19.5893L20.3815 12.8823L13.6745 6.17526L12.2605 7.58926L16.5535 11.8823H6.96753V13.8823H16.5535L12.2605 18.1753Z" fill="white"/>
+              </svg>
+
+
+          </button>
 
 
         </div>
@@ -69,18 +76,32 @@
             <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
-
-          <div id="audioPlayer" class="bg-white transition-all z-40 bg-opacity-50  rounded font-sans shadow-sm inline-flex px-6 py-2 absolute right-5 bottom-5  ">
-            <button id="playButton">
-              play/pause
-            </button>
-            <div class="ml-4 text-left">
-              <h4 id="titleSong" class="text-sm font-normal">All of me</h4>
-              <h5 id="artistSong" class="text-xs">Jhon Legend</h5>
+          <div class="text-right px-8  pt-12">
+            <div id="audioPlayer" class="bg-white transition-all z-40 bg-opacity-50  rounded font-sans shadow-sm inline-flex px-6 py-2 ">
+              <button id="playButton">
+                play/pause
+              </button>
+              <div class="ml-4 text-left">
+                <h4 id="titleSong" class="text-sm font-normal">All of me</h4>
+                <h5 id="artistSong" class="text-xs">Jhon Legend</h5>
+              </div>
             </div>
+
           </div>
 
 
+
+
+
+        </div>
+
+        <div id="keepDown" class="  absolute bottom-4 left-6 px-8 ">
+          <div class=" font-sans">
+            <div class="arrow-down scale-50">
+              <div class="left bg-primary"></div>
+              <div class="right bg-primary"></div>
+            </div>
+          </div>
 
         </div>
 

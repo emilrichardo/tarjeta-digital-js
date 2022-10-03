@@ -51,7 +51,7 @@ export default function Assistance(data, currentGuest, phone){
 
     elementSend.setAttribute("href", wppLink)
 
-    console.log(" " + wppLink);
+
 
     function stateConfirm(e){
 

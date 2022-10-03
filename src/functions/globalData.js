@@ -194,7 +194,7 @@ export const Places = new places({
 
 /// confirmar asistencia
 
-console.log(data.hash + currentGuest.id);
+
 
 const messageSi =`"${newContent.descripcion}: ${currentGuest.nombres} - Personal:(${currentGuest.personal}) ${currentGuest.personal > 1 ? "confirman": "confirma"} su presencia."
 
