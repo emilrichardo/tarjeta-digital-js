@@ -24,7 +24,7 @@ export default async function List(dataJson, invitadosList) {
   ${data.mjs_titulo} -
   ${data.mjs_cuerpo}
   Para más información, te dejamos este enlace con la tarjeta digital.
-  ${ data.hash + invitacion.id }
+  ${data.dominio + "/" + data.hash + invitacion.id }
   ¡Los esperamos!`;
 
     const item = `
