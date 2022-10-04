@@ -4,6 +4,8 @@ export default async function List(dataJson, invitadosList) {
   const elementInvitados = document.getElementById("listadoInvitados");
   const data = await dataJson;
 
+
+
   const listadoMarkup = `
 
   <h1>Todas las invitaciones</h1>
@@ -39,10 +41,37 @@ export default async function List(dataJson, invitadosList) {
       data-action="share/whatsapp/share"
       >Enviar invitacion ⟶
       </a>
+      <div>
+
+
+      <textarea class="w-full h-20 border border-primary">
+      ${textWhatsapp}
+      </textarea>
+      <button copy="${textWhatsapp}"  class="btn-copy font-sans text-lg bg-gradient-to-l from-primary via-primary to-primary-light text-light rounded px-4 py-1 ">Copiar texto de invitación</button>
+      </div>
   </li>
   `;
     if (elementInvitados) {
       list.innerHTML += item;
     }
+
+    const buttonsCopy = document.querySelectorAll(".btn-copy")
+
+
+
+    buttonsCopy.forEach(btnCopy=>{
+      //console.log(btnCopy.attributes.copy.value);
+      btnCopy.addEventListener("click", function(){
+        console.log(btnCopy.attributes.copy.value);
+        navigator.clipboard.writeText(btnCopy.attributes.copy.value).then(() => {
+        });
+        btnCopy.textContent = "✓ Invitacion copiada"
+      })
+    })
+
   });
+
+
+
+
 }
