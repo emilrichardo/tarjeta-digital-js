@@ -36,7 +36,7 @@ export default async function List(dataJson, invitadosList) {
       </a>
     </h5>
     <a
-      class="text-primary flax items-center"
+      class="text-primary hidden flax items-center"
       href="whatsapp://send?text=${textWhatsapp}"
       data-action="share/whatsapp/share"
       >Enviar invitacion ⟶
