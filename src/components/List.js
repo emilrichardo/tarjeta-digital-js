@@ -21,9 +21,10 @@ export default async function List(dataJson, invitadosList) {
 
   invitadosList.forEach((invitacion) => {
     const textWhatsapp = `${invitacion.nombres} -
-  ${data.mjs_titulo} - ${data.mjs_cuerpo} - ${data.dominio + "/" + data.hash + invitacion.id }
+  ${data.mjs_titulo} -
+  ${data.mjs_cuerpo}
   Para más información, te dejamos este enlace con la tarjeta digital.
-
+  ${ data.hash + invitacion.id }
   ¡Los esperamos!`;
 
     const item = `
