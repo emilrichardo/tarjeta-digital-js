@@ -416,7 +416,7 @@
       {
         "c": [
           { "v": 50.0, "f": "50" },
-          { "v": "Tona , Sole y Guille " },
+          { "v": "Tona , Sole, Nico y Guille " },
           { "v": 3.0, "f": "3" },
           { "v": "familia" }
         ]
@@ -845,6 +845,22 @@
           { "v": "Riachi Matias " },
           { "v": 1.0, "f": "1" },
           { "v": "compañero" }
+        ]
+      },
+      {
+        "c": [
+          { "v": 103.0, "f": "104" },
+          { "v": "Agustina y Edgar" },
+          { "v": 1.0, "f": "2" },
+          { "v": "compañeros" }
+        ]
+      },
+      {
+        "c": [
+          { "v": 103.0, "f": "105" },
+          { "v": "Silvana Ramos" },
+          { "v": 1.0, "f": "1" },
+          { "v": "compañera" }
         ]
       }
     ],
