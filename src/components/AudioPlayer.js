@@ -51,7 +51,7 @@ window.addEventListener('scroll',(event) => {
     const audioElement = document.querySelector("#audioPlayer")
     if(audioElement){
         if(window.scrollY >= 300){
-            audioElement?.classList.add("fixed", "top-4")
+            audioElement?.classList.add("fixed", "top-4" , "right-4")
             audioElement?.classList.remove("relative")
         } else{
             audioElement?.classList.remove("fixed", "top-4")
