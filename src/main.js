@@ -1,5 +1,5 @@
 
-import data from "./data.json" assert { type: "json" };
+import {data} from "./data.js" ;
 import Logo from "./components/Logo.js";
 import CountDown from "./components/CountDown.js";
 import List from "./components/List.js";

@@ -1,4 +1,4 @@
-{
+export const data = {
   "antetitulo": "¡Nos casamos!",
   "nombres": {
     "novia": "Viviana",

@@ -1,4 +1,4 @@
-{
+export const invitados = {
   "version": "0.6",
   "reqId": "0",
   "status": "ok",

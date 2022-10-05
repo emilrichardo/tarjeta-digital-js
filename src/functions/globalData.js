@@ -1,6 +1,6 @@
 //https://docs.google.com/spreadsheets/d/1pA3oJ8TbQ1v7204aJTo2qx2Khi8DsKuLFylBl0dHj0c/gviz/tq?tqx=out:json&gid=0
-import invitados from "./../invitados.json" assert { type: "json" };
-import data from "./../data.json" assert { type: "json" }
+import  {invitados} from "../invitados.js";
+import {data} from "../data.js"
 import { people, invited, place, places, confirmAssistance, gifts,bankAccount } from "./classes.js";
 // datos gloables de la invitacion
 
