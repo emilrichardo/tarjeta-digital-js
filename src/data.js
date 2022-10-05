@@ -13,7 +13,7 @@ export const data = {
   "vestimenta": "",
   "fecha": {
     "dia": 19,
-    "mes": "noviembre",
+    "mes": "11",
     "anio": 2022,
     "hora": "20:30:00"
   },
