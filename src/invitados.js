@@ -352,8 +352,8 @@ export const invitados = {
       {
         "c": [
           { "v": 42.0, "f": "42" },
-          { "v": "Pablo, David, Agustín, Carla, Leo, Mario, Hernán y Belén." },
-          { "v": 8.0, "f": "8" },
+          { "v": "Pablo, Mel, David, Agustín, Carla, Leo, Mario, Hernán y Belén." },
+          { "v": 8.0, "f": "9" },
           { "v": "amigos" }
         ]
       },
