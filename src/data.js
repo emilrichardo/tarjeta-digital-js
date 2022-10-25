@@ -7,7 +7,7 @@ export const data = {
   },
 
   "telefono":"+5493855963936",
-  "dominio": "",
+  "dominio": "https://dabata-german.netlify.app/",
   "hash": "#invitacion-10",
   "frase": "Nada es casualidad… Cada uno de nosotros es una parte minúscula de un plan enorme e infinito, donde nuestras líneas se cruzan o no, según la voluntad del arquitecto que lo ha trazado.   Por alguna razón nuestros caminos se juntaron, por eso hoy decimos dar el “SÍ” y queremos que seas parte de esta historia.",
   "vestimenta": "",
