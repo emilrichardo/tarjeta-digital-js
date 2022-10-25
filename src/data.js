@@ -6,16 +6,16 @@ export const data = {
     "separador": "y"
   },
 
-  "telefono":"+5493855844941",
-  "dominio": "https://vivi-nestor.netlify.app",
+  "telefono":"+5493855963936",
+  "dominio": "",
   "hash": "#invitacion-10",
-  "frase": "Amor es solo una palabra, hasta que alguien llega a darle sentido",
+  "frase": "Nada es casualidad… Cada uno de nosotros es una parte minúscula de un plan enorme e infinito, donde nuestras líneas se cruzan o no, según la voluntad del arquitecto que lo ha trazado.   Por alguna razón nuestros caminos se juntaron, por eso hoy decimos dar el “SÍ” y queremos que seas parte de esta historia.",
   "vestimenta": "",
   "fecha": {
-    "dia": 19,
-    "mes": "11",
+    "dia": 10,
+    "mes": "12",
     "anio": 2022,
-    "hora": "20:30:00"
+    "hora": "21:00:00"
   },
   "mjs_titulo": "¡Querida Familia!",
   "mjs_cuerpo": "Con mucho amor y alegría quermos anunciarles que ¡nos casamos!, y queremos compartir con ustedes este momento tan importante en nuestras vidas. ",
@@ -24,27 +24,20 @@ export const data = {
   "puntos_encuentros": {
     "titulo": "Puntos de encuentro",
     "puntos": [
+
       {
-        "lugar": "Iglesia Santo Cristo",
-        "direccion": "Avenida central 99 barrio moskoni",
-        "buttonText": "Como llegar",
-        "tipo": 0,
-        "horario": "20.45 hs",
-        "ubicacion": "https://www.google.com/maps/place/Parroquia+Santo+Cristo/@-27.7966325,-64.2791097,15z/data=!4m5!3m4!1s0x0:0x64c041e1940c7662!8m2!3d-27.7966325!4d-64.2791097"
-      },
-      {
-        "lugar": "Salón Atsa",
-        "direccion": "Zanjón",
+        "lugar": "Salón Abba Huasi",
+        "direccion": "Yanda",
         "buttonText": "Como llegar",
         "tipo": 1,
         "horario": "22.30 hs",
-        "ubicacion": "https://www.google.com/maps/place/Complejo+Deportivo+ATSA/@-27.8587678,-64.2532242,15z/data=!4m5!3m4!1s0x0:0x599c748cea917383!8m2!3d-27.8587678!4d-64.2532242"
+        "ubicacion": "https://www.google.com/maps/dir/-27.763601,-64.2306467/Aba+Huasi+Eventos,+Yanda,+Santiago+del+Estero/@-27.8254609,-64.3335964,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x943b4d1b953eaae3:0xa13d4117592ec196!2m2!1d-64.249018!2d-27.8858085"
       }
     ]
   },
   "confirmacion": {
     "titulo": "Confirmación de presencia",
-    "plazo": "Se ruega Confirmación de presencia hasta el 2 de noviembre",
+    "plazo": "Se ruega Confirmación de presencia hasta el 14 de noviembre",
     "si": "SI! Confirmo",
     "siResponse": "Es un alegría inmensa contar con tu presencia. ¡Te esperamos!",
     "si2": "SI! Confirmamos",
@@ -61,10 +54,10 @@ export const data = {
 
     "cuenta_bancaria" : {
       "btn_cuenta": "Ver CBU",
-      "banco" : "BBVA",
-      "alias": "PESCA.CANTO.BIGOTE",
-      "cbu": "0170071840000036332414",
-      "titular": "Arce Gonzaviviana al"
+      "banco" : "",
+      "alias": "GERMAN.DABATA.BODA",
+      "cbu": "0720045888000014813436",
+      "titular": ""
     }
 
   },

@@ -1,4 +1,4 @@
-//https://docs.google.com/spreadsheets/d/1pA3oJ8TbQ1v7204aJTo2qx2Khi8DsKuLFylBl0dHj0c/gviz/tq?tqx=out:json&gid=0
+//https://docs.google.com/spreadsheets/d/167H9GjVKFEZzwVkM9nE4y1-n6xETyRaD1U95tumYlz8/gviz/tq?tqx=out:json&gid=0
 
 export default async function List(dataJson, invitadosList) {
   const elementInvitados = document.getElementById("listadoInvitados");

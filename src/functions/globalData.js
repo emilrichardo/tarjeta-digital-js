@@ -46,9 +46,9 @@ export const invitadosList = [];
 invitadosJson.forEach((invitado, i) => {
   const invitadoNew = new invited({
     id: i,
-    nombres: invitado.c[1].v,
-    personal: invitado.c[2].v,
-    relacion: invitado.c[3].v
+    nombres: invitado.c[0].v,
+    personal: invitado.c[1].v,
+    relacion: invitado.c[2].v
   });
   invitadosList.push(invitadoNew);
 });
@@ -65,6 +65,8 @@ if (route === "") {
 
 
 export const currentGuest = invitadosList[currentInvitation];
+
+console.log(currentGuest);
 
 // content dinamic titlo y cuerpo
 class content {
@@ -91,10 +93,17 @@ if (
   currentGuest?.relacion === "tios" ||
   currentGuest?.relacion === "tíos" ||
   currentGuest?.relacion === "Tios" ||
+  currentGuest?.relacion === "Tios " ||
   currentGuest?.relacion === "primos" ||
   currentGuest?.relacion === "hermanos" ||
   currentGuest?.relacion === "padres" ||
   currentGuest?.relacion === "compañeros" ||
+  currentGuest?.relacion === "Hermano y Cuñada " ||
+  currentGuest?.relacion === "Padres y Hermanos " ||
+  currentGuest?.relacion === "Tios y Primos " ||
+  currentGuest?.relacion === "Amigos" ||
+  currentGuest?.relacion === "amigos " ||
+  currentGuest?.relacion === "Amigos " ||
   currentGuest?.relacion === "amigos"
 ) {
   newContent = new content({
@@ -116,9 +125,14 @@ if (
   });
 } else if (
   currentGuest?.relacion === "Tía" ||
+  currentGuest?.relacion === "madre" ||
+  currentGuest?.relacion === "Madre" ||
   currentGuest?.relacion === "tía" ||
   currentGuest?.relacion === "prima" ||
   currentGuest?.relacion === "compañera" ||
+  currentGuest?.relacion === "Amiga" ||
+  currentGuest?.relacion === "Amiga " ||
+  currentGuest?.relacion === "Cuñada " ||
   currentGuest?.relacion === "amiga"
 ) {
   newContent = new content({
@@ -133,6 +147,8 @@ if (
   currentGuest?.relacion === "tío" ||
   currentGuest?.relacion === "primo" ||
   currentGuest?.relacion === "compañero" ||
+  currentGuest?.relacion === "Amigo" ||
+  currentGuest?.relacion === "Amigo " ||
   currentGuest?.relacion === "amigo"
 ) {
   newContent = new content({

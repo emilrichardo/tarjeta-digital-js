@@ -10,10 +10,10 @@
 
   <body>
 
-    <div id="overlayMusic" class="bg-light  fixed top-0 left-0 w-screen h-screen z-50 bg-opacity-80 flex items-center justify-center backdrop-blur-sm">
+    <div id="overlayMusic" class="bg-light hidden  fixed top-0 left-0 w-screen h-screen z-50 bg-opacity-80 flex items-center justify-center backdrop-blur-sm">
       <div class="mx-auto text-center max-w-[200px]">
         <div class="center">
-          <div class="mx-auto text-center max-w-[200px]">
+          <div class="mx-auto text-center max-w-[240px]">
             <div
             class="logo w-24 inline-block"
             imageUrl="./src/images/logo.png"
@@ -42,7 +42,7 @@
       <section class="h-screen relative  flex flex-col justify-center">
         <div class="absolute left-0 -top-6 z-0">
           <img
-            src="./src/images/hojas01.png"
+            src="./src/images/image01.svg"
             alt="Hoja 01"
             width=180
             height=280
@@ -50,7 +50,7 @@
         </div>
         <div class="absolute right-0 -bottom-12 z-0">
           <img
-            src="./src/images/hojas02.png"
+            src="./src/images/image02.svg"
             alt="Hoja 01"
             width=180
             height=280
@@ -61,29 +61,27 @@
 
           <div class="mx-auto text-center max-w-[200px]">
             <div
-            class="logo w-40 inline-block"
+            class="logo inline-block"
             imageUrl="./src/images/logo.png"
             type="image"
             ></div>
 
           </div>
         </div>
-        <div class="px-8 mt-8 mb-4">
-          <h4 class="text-2xl max-w-[320px] px-8 italic font-normal">"<span class="frase"></span>".</h4>
-        </div>
+
         <div class="text-center">
           <audio id="myAudio" controls preload="auto"  loop class="hidden mx-auto">
-            <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
+            <source src="./src/mp3/tema.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
           <div class="text-right px-8  pt-12">
-            <div id="audioPlayer" class="bg-white relative transition-all z-40 bg-opacity-50  rounded font-sans shadow-sm inline-flex px-6 py-2 ">
+            <div id="audioPlayer"  class="bg-white relative transition-all z-40 bg-opacity-50  rounded font-sans shadow-sm inline-flex px-6 py-2 ">
               <button id="playButton">
                 play/pause
               </button>
               <div class="ml-4 text-left">
-                <h4 id="titleSong" class="text-sm font-normal">All of me</h4>
-                <h5 id="artistSong" class="text-xs">Jhon Legend</h5>
+                <h4 id="titleSong" class="text-sm font-normal">You make me feel brand new</h4>
+                <h5 id="artistSong" class="text-xs">Simply Red</h5>
               </div>
             </div>
 
@@ -106,13 +104,18 @@
         </div>
 
       </section>
+      <section>
+        <div class="px-8 mt-8 mb-4">
+          <h4 class="text-lg max-w-[320px] px-8 italic font-normal">"<span class="frase"></span>".</h4>
+        </div>
+      </section>
       <section class="z-10 relative  flex flex-col justify-center px-4">
         <div class="text-center">
           <i class="iconBird text-center"></i>
           <h4 class="mt-14 text-2xl tracking-wide font-normal"><span class="tituloInvitacion"></span></h4>
           <p class="cuerpoInvitacion mt-4 mx-auto max-w-[225px] text-lg tracking-wide leading-6  "></p>
 
-          <div class="cardInvitation font-mono mt-14 mb-8 text-left bg-gradient-to-bl from-primary via-primary to-[#c0b057]   text-light shadow-sm rounded-2xl px-8 py-8">
+          <div class="cardInvitation font-mono mt-14 mb-8 text-left bg-gradient-to-tl from-[#663300] via-[#663300] to-[#B77B44]   text-light shadow-sm rounded-md px-8 py-8">
             <h5>* Personal (<span class="personal"></span>)</h5>
             <h4 class="text-xl text-center my-4"><span class="nombres"></span></h4>
 
@@ -144,7 +147,7 @@
         <div class="text-center">
           <div class="iconCalendar w-16 inline-block mx-auto"></div>
           <h4 class="text-xl">Los esperamos el día</h4>
-          <h3 class=" text-3xl font-light mt-4 mb-8">19 de noviembre</h3>
+          <h3 class=" text-3xl font-light mt-4 mb-8">10 de diciembre</h3>
 
           <h5>Faltan:</h5>
         </div>
@@ -169,27 +172,15 @@
       </section>
 
       <section id="puntos" class="text-center">
-        <i class="iconMap text-center  mx-auto"></i>
-        <h2 class="text-2xl mb-4">Puntos de<br/>encuentro</h2>
-
-        <div class="line w-[1px] h-[45px] mb-8 inline-block border-l border-dashed border-dark"></div>
-
-        <div class="punto">
-          <i class="iconIglesia"></i>
-          <h4 class="text-xl my-2">20.45 hs</h4>
-          <h4 class="text-lg">Iglesia Santo Cristo</h4>
-          <h5 class=" text-sm">(Avenida central 99 barrio moskoni)</h5>
-          <a  class="btn px-6 py-3 my-6 border-dark border inline-block   uppercase font-medium" target="_blank" href="https://www.google.com/maps/place/Parroquia+Santo+Cristo/@-27.7966325,-64.2791097,15z/data=!4m5!3m4!1s0x0:0x64c041e1940c7662!8m2!3d-27.7966325!4d-64.2791097">¿Como llegar?</a>
-        </div>
 
         <div class="line w-[1px] h-[45px] mb-8 inline-block border-l border-dashed border-dark"></div>
 
         <div class="punto">
           <i class="iconSalon"></i>
-          <h4 class="text-xl my-2">22.30 hs</h4>
-          <h4 class="text-lg">Salón Atsa</h4>
-          <h5 class=" text-sm">(Zanjón)</h5>
-          <a  class="btn px-6 py-3 my-6 border-dark border inline-block   uppercase font-medium" target="_blank" href="https://www.google.com/maps/place/Complejo+Deportivo+ATSA/@-27.8587678,-64.2532242,15z/data=!4m5!3m4!1s0x0:0x599c748cea917383!8m2!3d-27.8587678!4d-64.2532242">¿Como llegar?</a>
+          <h4 class="text-xl my-2">21.00 hs</h4>
+          <h4 class="text-lg">Salón Abba Huasi</h4>
+          <h5 class=" text-sm">(Yanda)</h5>
+          <a  class="btn px-6 py-3 my-6 border-dark border inline-block   uppercase font-medium" target="_blank" href="https://www.google.com/maps/dir/-27.763601,-64.2306467/Aba+Huasi+Eventos,+Yanda,+Santiago+del+Estero/@-27.8254609,-64.3335964,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x943b4d1b953eaae3:0xa13d4117592ec196!2m2!1d-64.249018!2d-27.8858085">¿Como llegar?</a>
         </div>
       </section>
 
