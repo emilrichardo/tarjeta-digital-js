@@ -74,7 +74,13 @@ export default function AudioPlayer() {
     if(buttonPlay){
         buttonPlay.innerHTML = buttonPlayer(true)
     }
-    document.addEventListener("visibilitychange",  playAudio);
+
+   const wOpen = document.addEventListener("visibilitychange",  function(){
+    audioElement.pause()
+    buttonPlay.innerHTML = buttonPlayer(true)
+
+   },false);
+
 
     function playAudio(){
 
@@ -83,6 +89,7 @@ export default function AudioPlayer() {
         buttonPlay.innerHTML = buttonPlayer(false)
         overlayInto.style.display = "none";
         showArrow (true)
+
 
 
 
