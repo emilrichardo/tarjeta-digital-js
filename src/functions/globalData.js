@@ -53,6 +53,23 @@ invitadosJson.forEach((invitado, i) => {
   invitadosList.push(invitadoNew);
 });
 
+
+const agregados = [
+  {id: 74, nombres:"Maxi y Eugenia", personal:2, relacion: "amigos" }
+]
+
+agregados.forEach((invitado)=>{
+  const add =  new invited({
+    id: invitado.id,
+    nombres: invitado.nombres,
+    personal: invitado.personal,
+    relacion: invitado.relacion
+  })
+  invitadosList.push(add);
+
+})
+
+
 //current W E S T
 // route
 const route = window.location.hash.replace(data.hash, "");
