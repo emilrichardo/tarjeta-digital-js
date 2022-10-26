@@ -8,9 +8,13 @@ export default async function List(dataJson, invitadosList) {
 
   const listadoMarkup = `
 
-  <h1>Todas las invitaciones</h1>
-  <ul id="list">
-  </ul>
+  <h1 class="text-center text-lg font-bold">Todas las invitaciones</h1>
+  <h2 class="text-center">Para enviar invitación, copiar texto y pegar en chat de whastapp.</h2>
+  <div class=" max-w-[900px] mx-auto">
+    <ul id="list">
+    </ul>
+  </div>
+
   `;
 
   if (elementInvitados) {

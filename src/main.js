@@ -23,6 +23,7 @@ import {
 } from "/src/functions/globalData.js";
 
 
+document.title = "Dábata & Germán"
 
 CountDown(data);
 List(data, invitadosList);
