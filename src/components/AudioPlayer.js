@@ -1,6 +1,59 @@
 import {buttonPlayer} from "./Icons.js"
 
+const letra = [
+    ["Mi amor",
+    "Nunca encuentro las palabras, mi amor",
+    "Para decirte como me siento",
+    "Estas palabras no puedo explicar",
+    "Precioso amor",
+    "Tu tienes mi vida esperando en tus manos",
+    "Creaste todo lo que soy",
+     "Me enseñaste como vivir otra vez"],
 
+    ["Solo tu",
+    "Viniste cuando necesité un amigo",
+    "Creíste entre mi estupidez y mi rareza",
+    "Esta canción es para ti",
+    "Prueba de gratitud y amor"],
+
+    ["Dios te bendiga",
+    "Tu me haces sentir como nuevo",
+    "Por que dios me bendijo contigo",
+    "Tu me haces sentir como nuevo",
+    "Canto es"],
+
+    ["Esta canción",
+    "Me haces sentir como nuevo",
+    "Mi amor",
+    "Donde sea me sentía inseguro",
+    "Tu construiste y me hiciste seguro",
+    "Me regresaste mi orgullo",
+    "Preciosa amiga",
+    "Contigo",
+    "Eres alguien que puede contar conmigo",
+    "Para caminar el sendero hasta el fin de los tiempos"],
+
+    ["Sin ti",
+    "La vida no tiene sentido o rima",
+    "Como una canción fuera de tiempo",
+    "Como lo puedo compensar",
+    "Puedes tener fe en mi."]
+
+]
+
+
+
+function showSong (estrofa){
+
+    for(let i = 0; i > estrofa.length ; i++){
+console.log(i);
+        setTimeout(() => {
+            console.log(estrofa[1]);
+           }, "1000")
+    }
+
+}
+showSong(letra)
 
 export default function AudioPlayer() {
     const buttonPlay = document.querySelector("#playButton")

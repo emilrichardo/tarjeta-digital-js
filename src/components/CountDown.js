@@ -1,7 +1,7 @@
 //https://javascript.plainenglish.io/building-a-countdown-timer-with-vanilla-javascript-d78d2ca7f180
 
 export default async function countDown(data) {
-  console.log(data.fecha.mes);
+
   // "november 19, 2022 00:00:00",
   const date = `${data.fecha.mes} ${data.fecha.dia}, ${data.fecha.anio} ${data.fecha.hora} `;
 

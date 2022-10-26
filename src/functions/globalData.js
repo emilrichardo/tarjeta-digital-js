@@ -56,7 +56,7 @@ invitadosJson.forEach((invitado, i) => {
 //current W E S T
 // route
 const route = window.location.hash.replace(data.hash, "");
-let currentInvitation;
+let currentInvitation = route;
 if (route === "") {
   currentInvitation = 0;
 } else {
@@ -66,7 +66,7 @@ if (route === "") {
 
 export const currentGuest = invitadosList[currentInvitation];
 
-console.log(currentGuest);
+
 
 // content dinamic titlo y cuerpo
 class content {
