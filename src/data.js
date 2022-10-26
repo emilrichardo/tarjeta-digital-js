@@ -18,7 +18,7 @@ export const data = {
     "hora": "21:00:00"
   },
   "mjs_titulo": "¡Querida Familia!",
-  "mjs_cuerpo": "Con mucho amor y alegría quermos anunciarles que ¡nos casamos!, y queremos compartir con ustedes este momento tan importante en nuestras vidas. ",
+  "mjs_cuerpo": "Con mucho amor y alegría queremos anunciarles que ¡nos casamos!, y queremos compartir con ustedes este momento tan importante en nuestras vidas. ",
   "msj_cantidad": "(*) Respetar cantidad de invitados",
 
   "puntos_encuentros": {
