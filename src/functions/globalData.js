@@ -55,7 +55,10 @@ invitadosJson.forEach((invitado, i) => {
 
 
 const agregados = [
-  {id: 74, nombres:"Maxi y Eugenia", personal:2, relacion: "amigos" }
+  {id: 74, nombres:"Maxi y Eugenia", personal:2, relacion: "amigos" },
+  {id: 75, nombres:"Juan Pablo", personal:2, relacion: "amigo" },
+  {id: 76, nombres:"Maru", personal:1, relacion: "amigo" },
+  {id: 77, nombres:"Yessi", personal:1, relacion: "amigo" }
 ]
 
 agregados.forEach((invitado)=>{
