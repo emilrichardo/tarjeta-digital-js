@@ -1,8 +1,8 @@
 export const data = {
   "antetitulo": "¡Nos casamos!",
   "nombres": {
-    "novia": "Viviana",
-    "novio": "Nestor",
+    "novia": "Dábata",
+    "novio": "Germán",
     "separador": "y"
   },
 

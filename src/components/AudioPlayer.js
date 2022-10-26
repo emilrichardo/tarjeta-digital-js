@@ -74,10 +74,9 @@ export default function AudioPlayer() {
     if(buttonPlay){
         buttonPlay.innerHTML = buttonPlayer(true)
     }
-
+    document.addEventListener("visibilitychange",  playAudio);
 
     function playAudio(){
-
 
     if (audioElement.paused) {
         audioElement.play()
