@@ -59,6 +59,8 @@ const agregados = [
   {id: 75, nombres:"Juan Pablo", personal:2, relacion: "amigo" },
   {id: 76, nombres:"Maru", personal:1, relacion: "amigo" },
   {id: 77, nombres:"Yessi", personal:1, relacion: "amigo" }
+  {id: 78, nombres:"Yamil y Maria", personal:2, relacion: "amigos" }
+
 ]
 
 agregados.forEach((invitado)=>{
