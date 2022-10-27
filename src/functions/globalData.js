@@ -1,4 +1,10 @@
-//https://docs.google.com/spreadsheets/d/1pA3oJ8TbQ1v7204aJTo2qx2Khi8DsKuLFylBl0dHj0c/gviz/tq?tqx=out:json&gid=0
+
+const idLink = "167H9GjVKFEZzwVkM9nE4y1-n6xETyRaD1U95tumYlz8"
+const urlDownload = `https://docs.google.com/spreadsheets/d/${idLink}/gviz/tq?tqx=out:json&gid=0`
+
+console.log(urlDownload);
+
+
 import  {invitados} from "../invitados.js";
 import {data} from "../data.js"
 import { people, invited, place, places, confirmAssistance, gifts,bankAccount } from "./classes.js";
@@ -54,11 +60,11 @@ invitadosJson.forEach((invitado, i) => {
 });
 
 
-const agregados = [
+/* const agregados = [
   {id: 74, nombres:"Maxi y Eugenia", personal:2, relacion: "amigos" },
   {id: 75, nombres:"Juan Pablo", personal:2, relacion: "amigo" },
   {id: 76, nombres:"Maru", personal:1, relacion: "amigo" },
-  {id: 77, nombres:"Yessi", personal:1, relacion: "amigo" }
+  {id: 77, nombres:"Yessi", personal:1, relacion: "amigo" },
   {id: 78, nombres:"Yamil y Maria", personal:2, relacion: "amigos" }
 
 ]
@@ -72,7 +78,7 @@ agregados.forEach((invitado)=>{
   })
   invitadosList.push(add);
 
-})
+}) */
 
 
 //current W E S T
