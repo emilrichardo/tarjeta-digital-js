@@ -11,6 +11,7 @@ import {
     Calendar,
     Map,
     iglesia,
+    salon,
     Gift
   } from "./Icons.js"
 
@@ -26,4 +27,5 @@ import {
   createElements(".iconCalendar", Calendar )
   createElements(".iconMap", Map )
   createElements(".iconIglesia", iglesia )
+  createElements(".iconSalon", salon )
   createElements(".iconRegalo", Gift )
