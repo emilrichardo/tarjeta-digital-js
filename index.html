@@ -10,7 +10,7 @@
 
   <body>
 
-    <div id="overlayMusic" class="bg-light  fixed top-0 left-0 w-screen h-screen z-50 bg-opacity-80 flex items-center justify-center backdrop-blur-sm">
+    <div id="overlayMusic" class="bg-light hidden fixed top-0 left-0 w-screen h-screen z-50 bg-opacity-80 flex items-center justify-center backdrop-blur-sm">
       <div class="mx-auto text-center max-w-[200px]">
         <div class="center">
           <div class="mx-auto text-center max-w-[200px]">
@@ -38,9 +38,13 @@
 
 
 
-    <div class="max-w-[410px] mx-auto relative shadow-lg bg-light">
-      <section class="h-screen relative  flex flex-col justify-center">
-        <div class="absolute left-0 -top-6 z-0">
+    <div class="max-w-[410px] bg-white mx-auto relative shadow-lg">
+
+
+
+      <section class="h-screen  bg-dark relative  flex flex-col ">
+
+        <div class="absolute left-0 -top-6 z-10">
           <img
             src="./src/images/hojas01.png"
             alt="Hoja 01"
@@ -48,7 +52,7 @@
             height=280
             />
         </div>
-        <div class="absolute right-0 -bottom-12 z-0">
+        <div class="absolute right-0 -bottom-12 z-10">
           <img
             src="./src/images/hojas02.png"
             alt="Hoja 01"
@@ -56,46 +60,50 @@
             height=280
             />
         </div>
-        <div class="text-center ">
-          <h4 class=" text-xl tracking-[6px]"><span class="antetitulo"></span></h4>
+        <div class="relative z-10 h-screen">
+          <div class="text-center ">
+            <h4 class=" text-xl tracking-[6px]"><span class="antetitulo"></span></h4>
 
-          <div class="mx-auto text-center max-w-[200px]">
-            <div
-            class="logo w-40 inline-block"
-            imageUrl="./src/images/logo.png"
-            type="image"
-            ></div>
+            <div class="mx-auto mt-[5vh] text-center max-w-[200px]">
+              <div
+              class="logo w-40  inline-block"
+              imageUrl="./src/images/logo-white.png"
+              type="image"
+              ></div>
 
+            </div>
           </div>
-        </div>
-        <div class="px-8 mt-8 mb-4">
-          <h4 class="text-2xl max-w-[320px] px-8 italic font-normal">"<span class="frase"></span>".</h4>
-        </div>
-        <div class="text-center">
-          <audio id="myAudio" controls preload="auto"  loop class="hidden mx-auto">
-            <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-          <div class="text-right px-8  pt-12">
-            <div id="audioPlayer" class="bg-white relative transition-all z-40 bg-opacity-50  rounded font-sans shadow-sm inline-flex px-6 py-2 ">
-              <button id="playButton">
-                play/pause
-              </button>
-              <div class="ml-4 text-left">
-                <h4 id="titleSong" class="text-sm font-normal">All of me</h4>
-                <h5 id="artistSong" class="text-xs">Jhon Legend</h5>
+          <div class="px-8 mt-8 mb-4">
+            <h4 class="text-2xl text-light  max-w-[320px] px-8 italic font-normal">"<span class="frase"></span>".</h4>
+          </div>
+          <div class="text-center">
+            <audio id="myAudio" controls preload="auto"  loop class="hidden mx-auto">
+              <source src="src/mp3/allofme.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <div class="text-right px-8  pt-12">
+              <div id="audioPlayer" class="bg-dark bottom-8 hidden  text-light  absolute right-4 transition-all z-100   rounded font-sans shadow-sm inline-flex px-6 py-2 ">
+                <button id="playButton">
+                  play/pause
+                </button>
+                <div class="ml-4 text-left">
+                  <h4 id="titleSong" class="text-sm font-normal">All of me</h4>
+                  <h5 id="artistSong" class="text-xs">Jhon Legend</h5>
+                </div>
               </div>
+
             </div>
 
+
+
+
+
           </div>
-
-
-
 
 
         </div>
 
-        <div id="keepDown" class="  absolute bottom-4 left-6 px-8 ">
+        <div id="keepDown" class=" z-50 absolute bottom-4 left-6 px-8 ">
           <div class=" font-sans">
             <div class="arrow-down scale-50">
               <div class="left bg-primary"></div>
@@ -104,13 +112,24 @@
           </div>
 
         </div>
+        <img class="absolute h-screen object-cover top-0 z-0    opacity-20    " src="./dist/portada.jpg" />
+
+      </section>
+      <section text-center>
+        <img class="w-full" src="./dist/fotoa/01.jpg" />
+        <img  class="w-full"  src="./dist/fotoa/02.jpg" />
+        <div class="text-center">
+          <a href="https://photos.google.com/share/AF1QipNGAYKo3BX-J_UUKWUlAz0kruTdWhh_Ph4T028lOE1Pf9JsDtYp7Ixm04LBYRVveg?key=c1pxY3c5djctNGZXSDNhZWV3MUdwaGlJcER2RGVB"  class="btn px-8 mt-4 py-3 my-3 font-sans border-dark border inline-block   uppercase font-medium mx-auto"> Ver todas  las fotos</a>
+
+
+        </div>
+
+
 
       </section>
       <section class="z-10 relative  flex flex-col justify-center px-4">
         <div class="text-center">
-          <i class="iconBird text-center"></i>
-          <h4 class="mt-14 text-2xl tracking-wide font-normal"><span class="tituloInvitacion"></span></h4>
-          <p class="cuerpoInvitacion mt-4 mx-auto max-w-[225px] text-lg tracking-wide leading-6  "></p>
+
 
           <div class="cardInvitation font-mono mt-14 mb-8 text-left bg-gradient-to-bl from-primary via-primary to-[#c0b057]   text-light shadow-sm rounded-2xl px-8 py-8">
             <h5>* Personal (<span class="personal"></span>)</h5>
@@ -143,29 +162,13 @@
       <section id="calendar" class="py-24">
         <div class="text-center">
           <div class="iconCalendar w-16 inline-block mx-auto"></div>
-          <h4 class="text-xl">Los esperamos el día</h4>
+
           <h3 class=" text-3xl font-light mt-4 mb-8">19 de noviembre</h3>
 
-          <h5>Faltan:</h5>
-        </div>
-        <div id="countDown" class="flex justify-around text-center max-w-[220px] mx-auto ">
-          <span class="counter_item flex flex-col">
-            <span id="days" class="text-lg">000</span>
-            <span class=" uppercase text-[0.3em]" id="daystxt">Días</span>
-          </span>
-          <span class="counter_item flex flex-col">
-            <span id="hours"  class="text-lg">00</span>
-            <span class=" uppercase text-[0.3em]" id="hourstxt">Horas</span>
-          </span>
-          <span class="counter_item flex flex-col">
-            <span id="minutes"  class="text-lg">00</span>
-            <span class=" uppercase text-[0.3em]" id="minutestxt">Minutos</span>
-          </span>
-          <span class="counter_item flex flex-col">
-            <span id="seconds"  class="text-lg">00</span>
-            <span class=" uppercase text-[0.3em]" id="secondstxt">Segundos</span>
-          </span>
-        </div>
+          <div class="font-bold border border-primary mx-auto inline-block px-4 py-8 rounded-lg bg-primary bg-opacity-10">
+            <h3 class="text-xl">El grán día llegó! <br/> Los esperamos</h3>
+
+          </div>
       </section>
 
       <section id="puntos" class="text-center">
@@ -193,7 +196,7 @@
         </div>
       </section>
 
-      <section id="assistance" class=" min-h-screen text-center flex flex-col justify-center">
+      <section id="assistance" class="hidden min-h-screen text-center  flex-col justify-center">
         <fieldset id="confirmationFielSet">
           <h3 id="confirmTitle" class="text-2xl mb-8"></h3>
           <p  id="confirmBody" class=" max-w-[240px] mx-auto inline-block mb-8" ></p>
@@ -217,7 +220,7 @@
       </fieldset>
       </section>
 
-      <section class="regalos py-8">
+      <section class="regalos hidden py-8">
         <i class="iconRegalo block mb-4  w-full  text-center"></i>
         <h3 class="text-2xl text-center mb-8">Regalos</h3>
         <div class="px-8">
@@ -273,11 +276,11 @@
       </section>
 
       <footer>
-        <div class="text-center py-8 font-sans ">
+        <div class="text-center mt-24 py-8 font-sans ">
           <h3 class=" text-xl">¡Los esperamos!</h3>
           <div class="mx-auto text-center max-w-[200px]">
             <div
-            class="logo w-32 inline-block"
+            class="logo w-14 inline-block"
             imageUrl="./src/images/logo.png"
             type="image"
             ></div>
